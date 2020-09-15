@@ -1,8 +1,13 @@
 <template>
-  <div>
-    <HomeLanding />
-    <WhoWeAre />
-  </div>
+  <v-app>
+    <v-main>
+      <HomeLanding />
+      <WhoWeAre />
+      <div class="col-10 mx-auto">
+        TESTE
+      </div>
+    </v-main>
+  </v-app>
 </template>
 
 <script>
