@@ -19,7 +19,12 @@ const routes = [
   {
     path: '/teste-2',
     name: 'Teste2',
-    component: Teste,
+    component: () => import('./components/teste/index.vue'),
+  },
+  {
+    path: '/teste-3',
+    name: 'Teste3',
+    component: () => import('./pages/example'),
   },
 ];
 
