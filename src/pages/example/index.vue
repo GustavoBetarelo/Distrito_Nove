@@ -3,7 +3,7 @@
     <v-layout class="text-center col-6" wrap>
       <v-flex class="col-6">
         <v-img
-          :src="require('../assets/logo.svg')"
+          :src="require('@/assets/logo.svg')"
           class="my-3"
           contain
           height="200"
