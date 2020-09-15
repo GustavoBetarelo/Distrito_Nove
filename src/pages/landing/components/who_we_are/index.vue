@@ -54,7 +54,7 @@ export default {
 </script>
 
 <style scoped>
-.container-default {
+/* .container-default {
   max-height: 100vh;
-}
+} */
 </style>

@@ -72,8 +72,8 @@ export default {
 };
 </script>
 
-<style scoped lang="scss">
-.container-landing {
+<style scoped>
+/* .container-landing {
   background-image: linear-gradient(
       to right,
       rgba(94, 35, 157, 1),
@@ -90,5 +90,5 @@ export default {
 }
 .border-default {
   border: 1px solid rgba(238, 238, 238, 0.5);
-}
+} */
 </style>
