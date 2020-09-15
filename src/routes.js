@@ -12,7 +12,7 @@ const routes = [
   {
     path: '/teste',
     name: 'Teste',
-    component: () => import('@/components/HelloWorld.vue'),
+    component: () => import('@/pages/teste'),
   },
 ];
 
