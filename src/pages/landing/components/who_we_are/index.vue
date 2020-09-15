@@ -1,6 +1,6 @@
 <template>
   <div class="py-12 fill-height col-10 mx-auto">
-    <!-- <v-layout>
+    <v-layout>
       <v-flex lg6 md6 class="mt-8">
         <div class="text-left textDefault--text">
           <h4
@@ -43,7 +43,7 @@
           </div>
         </v-img>
       </v-flex>
-    </v-layout> -->
+    </v-layout>
   </div>
 </template>
 

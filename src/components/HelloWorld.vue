@@ -1,16 +1,16 @@
 <template>
   <v-container>
-    <v-row class="text-center">
-      <v-col class="col-6">
+    <v-layout class="text-center col-6" wrap>
+      <v-flex class="col-6">
         <v-img
           :src="require('../assets/logo.svg')"
           class="my-3"
           contain
           height="200"
         />
-      </v-col>
+      </v-flex>
 
-      <v-col class="mb-4">
+      <v-flex class="mb-4 col-6">
         <h1 class="display-2 font-weight-bold mb-3">
           Welcome to Vuetify
         </h1>
@@ -22,9 +22,9 @@
             >Discord Community</a
           >
         </p>
-      </v-col>
+      </v-flex>
 
-      <v-col class="mb-5" cols="12">
+      <v-flex class="mb-5 col-12">
         <h2 class="headline font-weight-bold mb-3">
           What's next?
         </h2>
@@ -40,9 +40,9 @@
             {{ next.text }}
           </a>
         </v-row>
-      </v-col>
+      </v-flex>
 
-      <v-col class="mb-5" cols="12">
+      <v-flex class="mb-5 col-12">
         <h2 class="headline font-weight-bold mb-3">
           Important Links
         </h2>
@@ -58,9 +58,9 @@
             {{ link.text }}
           </a>
         </v-row>
-      </v-col>
+      </v-flex>
 
-      <v-col class="mb-5" cols="12">
+      <v-flex class="mb-5 col-12">
         <h2 class="headline font-weight-bold mb-3">
           Ecosystem
         </h2>
@@ -76,8 +76,8 @@
             {{ eco.text }}
           </a>
         </v-row>
-      </v-col>
-    </v-row>
+      </v-flex>
+    </v-layout>
   </v-container>
 </template>
 

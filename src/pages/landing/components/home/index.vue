@@ -2,7 +2,7 @@
   <v-layout column fill-height class="py-12">
     <v-flex shrink>
       <v-layout justify-space-between class="col-10 mx-auto white--text shrink">
-        <!-- <v-flex>
+        <v-flex>
           <h3 class="text-h5 font-weight-bold text-left">
             Girabel's Enterprise
           </h3>
@@ -27,10 +27,10 @@
               <v-icon color="white" size="28">mdi-menu</v-icon>
             </v-flex>
           </v-layout>
-        </v-flex> -->
+        </v-flex>
       </v-layout>
     </v-flex>
-    <!-- <v-flex class="d-flex align-center justify-start">
+    <v-flex class="d-flex align-center justify-start">
       <v-layout
         align-start
         wrap
@@ -62,7 +62,7 @@
           </div>
         </v-flex>
       </v-layout>
-    </v-flex> -->
+    </v-flex>
   </v-layout>
 </template>
 
