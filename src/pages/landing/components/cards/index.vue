@@ -17,7 +17,9 @@
               <v-card-text>
                 <v-icon size="40" color="pink">mdi-google-maps</v-icon>
 
-                <p class="display-1 mt-4 font-weight-bold dark--text">
+                <p
+                  class="display-1 mt-4 font-weight-bold dark--text col-8 pa-0"
+                >
                   Localizações públicas
                 </p>
 
