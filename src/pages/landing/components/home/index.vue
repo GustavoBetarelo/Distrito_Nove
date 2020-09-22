@@ -1,6 +1,12 @@
 <template>
-  <v-container class="py-12 container-landing fill-height" fluid>
-    <v-layout class="white--text col-10 mx-auto" column>
+  <v-container
+    class="py-4 py-lg-12 py-md-12 py-sm-12 container-landing fill-height"
+    fluid
+  >
+    <v-layout
+      class="white--text col-12 col-lg-10 col-md-10 col-sm-10 mx-auto pa-0"
+      column
+    >
       <!-- Top Bar -->
       <v-flex shrink class="d-flex justify-space-between align-center">
         <v-layout>
@@ -8,18 +14,41 @@
             <h4 class="text-h4 font-weight-bold">Girabel's Enterprise</h4>
           </v-flex>
 
-          <v-flex class="d-flex justify-space-between align-center">
-            <h4>Inicio</h4>
-            <h4>Empresa</h4>
-            <h4>Serviços</h4>
-            <v-btn color="pink" elevation="0" dark rounded large>Entrar</v-btn>
-            <v-app-bar-nav-icon @click="drawer = true" color="white" />
+          <v-flex>
+            <v-container fluid class="pa-0" grid-list-xl>
+              <v-layout align-center justify-end>
+                <v-flex class="hidden-xs-only" shrink>
+                  <h4>Inicio</h4>
+                </v-flex>
+                <v-flex class="hidden-xs-only " shrink>
+                  <h4>Empresa</h4>
+                </v-flex>
+                <v-flex class="hidden-xs-only " shrink>
+                  <h4>Serviços</h4>
+                </v-flex>
+                <v-flex class="hidden-xs-only " shrink>
+                  <v-btn
+                    color="pink"
+                    elevation="0"
+                    dark
+                    rounded
+                    large
+                    @click="openLogin"
+                  >
+                    Entrar
+                  </v-btn>
+                </v-flex>
+                <v-flex class="" shrink>
+                  <v-app-bar-nav-icon @click="drawer = true" color="white" />
+                </v-flex>
+              </v-layout>
+            </v-container>
 
             <v-navigation-drawer
               color="pink"
               v-model="drawer"
               absolute
-              width="15%"
+              :width="$vuetify.breakpoint.smAndDown ? '50%' : '15%'"
               style="box-shadow: none; max-height: 100vh"
               temporary
               class="rounded-tr-xl rounded-br-xl"
@@ -49,10 +78,14 @@
               </div>
 
               <div>
-                <h1 class="text-h1 font-weight-black">
+                <h2
+                  class="text-h2 text-lg-h1 text-md-h1 text-sm-h1 font-weight-black"
+                >
                   Nós damos
-                </h1>
-                <h1 class="pink--text text-h1 font-weight-black">
+                </h2>
+                <h1
+                  class="pink--text text-h2 text-lg-h1 text-md-h1 text-sm-h1 font-weight-black"
+                >
                   voz ao povo
                 </h1>
               </div>
@@ -60,7 +93,7 @@
           </v-flex>
           <v-flex shrink>
             <div
-              class="border-default d-flex align-center justify-space-between pa-6 mt-12 col-6"
+              class="border-default d-flex align-center justify-space-between pa-6 mt-12 col-12 col-lg-6 col-md-6 col-sm-6"
             >
               <p class="mb-0">
                 Já conhece nossa plataforma? Vamos direto ao ponto!
@@ -89,6 +122,11 @@ export default {
     return {
       drawer: false,
     };
+  },
+  methods: {
+    openLogin() {
+      this.$bus.$emit('changeLogin', true);
+    },
   },
 };
 </script>

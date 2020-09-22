@@ -1,7 +1,7 @@
 <template>
   <div class="d-flex">
     <div
-      class="d-flex flex-column align-start justify-start col-10 mx-auto py-12"
+      class="d-flex flex-column align-start justify-start col-12 col-lg-10 col-md-10 col-sm-10 mx-auto py-6 py-lg-12 py-md-12 py-sm-12"
     >
       <div>
         <h4 class="text-h4 font-weight-bold dark--text">Formulário</h4>
@@ -10,12 +10,19 @@
         <v-layout>
           <v-flex class="align-center">
             <v-card elevation="0" style="border: 1px solid #eee">
-              <v-layout>
-                <v-flex lg6 md6 sm6 xs12>
+              <v-layout class="flex-column flex-lg-row flex-md-row">
+                <v-flex lg6 md6 sm12 xs12>
                   <div
-                    class="pink pa-8 white--text fill-height form-default-side rounded-tl rounded-bl"
+                    class="pink pa-8 white--text fill-height form-default-side"
+                    :class="
+                      $vuetify.breakpoint.smAndDown
+                        ? 'rounded-tl rounded-tr'
+                        : 'rounded-tl rounded-bl'
+                    "
                   >
-                    <h2 class="text-h2 font-weight-bold col-6 pa-0">
+                    <h2
+                      class="text-h4 text-lg-h2 text-md-h2 text-sm-h2 font-weight-bold col-6 pa-0"
+                    >
                       Aqui seu dinheiro vale mais
                     </h2>
                     <p class="col-6 pa-0 mt-2">
@@ -26,7 +33,7 @@
                     </p>
                   </div></v-flex
                 >
-                <v-flex lg6 md6 sm6 xs12 class="px-12 py-8">
+                <v-flex lg6 md6 sm12 xs12 class="px-12 py-8">
                   <v-form v-model="formData.validate">
                     <v-layout wrap>
                       <v-flex lg6 md6 sm6 xs12>

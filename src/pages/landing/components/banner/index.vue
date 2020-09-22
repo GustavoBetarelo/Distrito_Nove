@@ -1,15 +1,22 @@
 <template>
   <div class="d-flex">
     <div
-      class="d-flex flex-column align-start justify-start col-10 mx-auto py-12"
+      class="d-flex flex-column align-start justify-start col-12 col-lg-10 col-md-10 col-sm-10 mx-auto py-6 py-lg-12 py-md-12 py-sm-12"
     >
       <div>
         <h4 class="text-h4 font-weight-bold dark--text">Banner</h4>
       </div>
       <v-container fluid class="pa-0 mt-6" grid-list-lg>
         <v-layout>
-          <v-flex class="mt-16 d-flex flex-column align-center">
-            <v-carousel hide-delimiter-background class="rounded-lg">
+          <v-flex
+            class="mt-6 mt-lg-16 mt-md-16 mt-sm-16 d-flex flex-column align-center"
+          >
+            <v-carousel
+              hide-delimiter-background
+              class="rounded-lg"
+              cycle
+              vertical
+            >
               <v-carousel-item v-for="(slide, i) in slides" :key="i">
                 <v-sheet
                   :color="colors[i]"
@@ -18,9 +25,9 @@
                   :style="`background-image: url(${slide.image})`"
                 >
                   <div
-                    class="fill-height text-left col-6 ml-12 d-flex flex-column align-start justify-start"
+                    class="fill-height text-left col-12 col-lg-8 col-md-8 col-sm-8 ml-0 ml-lg-12 ml-md-12 ml-sm-12 d-flex flex-column align-start justify-start"
                   >
-                    <div class="text-h2 font-weight-bold">
+                    <div class="text-h4 font-weight-bold">
                       {{ slide.label }}
                     </div>
                     <p class="mt-4">

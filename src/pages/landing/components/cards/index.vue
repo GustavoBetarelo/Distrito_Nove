@@ -1,14 +1,14 @@
 <template>
   <div class="d-flex">
     <div
-      class="d-flex flex-column align-start justify-start col-10 mx-auto py-12"
+      class="d-flex flex-column align-start justify-start col-12 col-lg-10 col-md-10 col-sm-10 mx-auto py-6 py-lg-12 py-md-12 py-sm-12"
     >
       <div>
         <h4 class="text-h4 font-weight-bold dark--text">Cards</h4>
       </div>
       <v-container fluid class="pa-0 mt-6" grid-list-lg>
-        <v-layout>
-          <v-flex v-for="i in 3" :key="i">
+        <v-layout wrap>
+          <v-flex lg4 md5 sm12 xs12 v-for="i in 3" :key="i">
             <v-card
               height="100%"
               elevation="0"
@@ -18,7 +18,7 @@
                 <v-icon size="40" color="pink">mdi-google-maps</v-icon>
 
                 <p
-                  class="display-1 mt-4 font-weight-bold dark--text col-8 pa-0"
+                  class="display-1 mt-4 font-weight-bold dark--text col-10 col-md-12 pa-0"
                 >
                   Localizações públicas
                 </p>
