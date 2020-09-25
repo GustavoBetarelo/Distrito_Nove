@@ -26,6 +26,7 @@
           </v-img>
         </v-flex>
         <v-flex lg6 md6 class="pa-12 my-lg-16 ml-md-16   d-flex align-center">
+
           <v-form class="flex-fill">
             <div class="text-caption font-weight-light text-center grey--text ">
               Para fazer login
