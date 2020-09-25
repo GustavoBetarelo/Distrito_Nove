@@ -1,24 +1,26 @@
 <template>
   <div class="fill-height">
     <Home />
-    <Cards />
-    <v-divider />
-    <Banner />
-    <v-divider />
-    <Form />
+    <DirectionPlatform />
+    <WeAreAmazing />
+    <!--    <Cards />-->
+    <!--    <v-divider />-->
+    <!--    <Banner />-->
+    <!--    <v-divider />-->
+    <!--    <Form />-->
     <LoginModal />
   </div>
 </template>
 
 <script>
 import Home from '@/pages/landing/components/home/index';
-import Cards from '@/pages/landing/components/cards/index';
-import Banner from '@/pages/landing/components/banner/index';
-import Form from '@/pages/landing/components/form/index';
 import LoginModal from '@/pages/landing/components/login/index';
+import DirectionPlatform from '@/pages/landing/components/direction_platform/index';
+import WeAreAmazing from '@/pages/landing/components/we_are_amazing/index';
+
 export default {
   name: 'Landing',
-  components: { LoginModal, Form, Banner, Cards, Home },
+  components: { WeAreAmazing, DirectionPlatform, LoginModal, Home },
 };
 </script>
 

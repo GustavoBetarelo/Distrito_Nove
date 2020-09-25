@@ -1,5 +1,6 @@
 <template>
   <v-container
+    style="max-height: 100vh"
     class="py-4 py-lg-12 py-md-12 py-sm-12 container-landing fill-height"
     fluid
   >
@@ -144,7 +145,6 @@ export default {
   background-position: center;
   background-repeat: no-repeat;
   background-blend-mode: multiply;
-  max-height: 100vh;
 }
 
 .border-default {
