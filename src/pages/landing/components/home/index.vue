@@ -1,11 +1,11 @@
 <template>
   <v-container
     style="max-height: 100vh"
-    class="py-4 py-lg-12 py-md-12 py-sm-12 container-landing fill-height"
+    class="py-4 py-lg-12 py-md-12 py-sm-12 container-landing fill-height pa-0"
     fluid
   >
     <v-layout
-      class="white--text col-12 col-lg-10 col-md-10 col-sm-10 mx-auto pa-0"
+      class="white--text col-10 col-lg-10 col-md-10 col-sm-10 mx-auto"
       column
     >
       <!-- Top Bar -->
@@ -80,12 +80,12 @@
 
               <div>
                 <h2
-                  class="text-h2 text-lg-h1 text-md-h1 text-sm-h1 font-weight-black"
+                  class="text-h3 text-lg-h1 text-md-h1 text-sm-h1 font-weight-black"
                 >
                   Nós damos
                 </h2>
                 <h1
-                  class="pink--text text-h2 text-lg-h1 text-md-h1 text-sm-h1 font-weight-black"
+                  class="pink--text text-h3 text-lg-h1 text-md-h1 text-sm-h1 font-weight-black"
                 >
                   voz ao povo
                 </h1>

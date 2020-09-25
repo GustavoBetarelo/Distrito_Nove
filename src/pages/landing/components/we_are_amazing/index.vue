@@ -1,6 +1,6 @@
 <template>
-  <div class="fill-height d-flex purple" style="max-height: 100vh">
-    <div class="col-10 mx-auto py-12 flex-fill d-flex">
+  <div class="fill-height d-flex dark" style="max-height: 100vh">
+    <div class="col-10 mx-auto py-12 flex-fill d-flex align-center">
       <v-layout class="flex-fill" align-center wrap justify-space-between>
         <v-flex lg12 md12 sm12 xs12 class="fill-height d-flex">
           <div class="text-center flex-fill d-flex flex-column">
@@ -12,7 +12,9 @@
               </h5>
             </div>
             <div class="mt-6">
-              <h3 class="white--text font-weight-regular text-h3">
+              <h3
+                class="white--text font-weight-regular text-h4 text-lg-h3 text-md-h3 text-sm-h3"
+              >
                 Funcionalidades
               </h3>
             </div>
@@ -21,9 +23,7 @@
                 As funcionalidades que o Right Direction é capaz de entregar
               </p>
             </div>
-            <div
-              class="flex-fill d-flex white--text align-center justify-center"
-            >
+            <div class="d-flex white--text align-center justify-center">
               Coming Soon
             </div>
             <div class="mt-6">

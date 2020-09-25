@@ -12,7 +12,9 @@
               </h5>
             </div>
             <div class="mt-6">
-              <h3 class="white--text font-weight-regular text-h3">
+              <h3
+                class="white--text font-weight-regular text-h4 text-lg-h3 text-md-h3 text-sm-h3"
+              >
                 Plataforma Direction
               </h3>
             </div>
