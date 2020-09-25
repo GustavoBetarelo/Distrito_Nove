@@ -1,5 +1,5 @@
 <template>
-  <div class="fill-height d-flex purple" style="max-height: 100vh">
+  <div class="d-flex purple" style="min-height: 100vh">
     <div class="col-10 mx-auto py-12 flex-fill d-flex">
       <v-layout class="flex-fill" align-center wrap justify-space-between>
         <v-flex lg6 md6 sm12 xs12>

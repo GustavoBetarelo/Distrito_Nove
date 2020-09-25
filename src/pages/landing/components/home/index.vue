@@ -1,11 +1,11 @@
 <template>
   <v-container
-    style="max-height: 100vh"
-    class="py-4 py-lg-12 py-md-12 py-sm-12 container-landing fill-height pa-0"
+    class="py-4 py-lg-12 py-md-12 py-sm-12 container-landing pa-0 d-flex"
+    style="min-height: 100vh"
     fluid
   >
     <v-layout
-      class="white--text col-10 col-lg-10 col-md-10 col-sm-10 mx-auto"
+      class="white--text col-10 col-lg-10 col-md-10 col-sm-10 mx-auto flex-fill"
       column
     >
       <!-- Top Bar -->
@@ -70,7 +70,7 @@
       </v-flex>
 
       <!-- Content -->
-      <v-flex class="d-flex">
+      <v-flex class="d-flex mt-12">
         <v-layout column justify-center>
           <v-flex class="d-flex align-center" shrink>
             <div>
