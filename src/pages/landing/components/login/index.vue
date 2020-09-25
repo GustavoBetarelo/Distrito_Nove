@@ -35,13 +35,14 @@
             </div>
             <v-layout column class="mt-6">
               <v-flex>
-                <v-text-field type="mail" label="E-mail" outlined rounded />
+                <v-text-field type="mail" label="E-mail" outlined rounded color="pink" />
               </v-flex>
               <v-flex>
                 <v-text-field
                   :type="viewPassword ? 'text' : 'password'"
                   label="Senha"
                   outlined
+                  color="pink"
                   rounded
                   :append-icon="viewPassword ? 'mdi-eye-off' : 'mdi-eye'"
                   @click:append="viewPassword = !viewPassword"
