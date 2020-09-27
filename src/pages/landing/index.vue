@@ -1,8 +1,8 @@
 <template>
   <div class="fill-height">
     <Home />
-    <DirectionPlatform/>
     <EnterpriseContent/>
+    <DirectionPlatform/>
     <WeAreAmazing/>
     <!--    <Cards />-->
     <!--    <v-divider />-->

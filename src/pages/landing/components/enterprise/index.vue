@@ -1,10 +1,10 @@
 <template>
 <v-container class="pa-0 d-flex" style="min-height: 100vh">
-  <v-layout class="d-flex flex-fill">
-    <v-flex lg12 md12 sm12 xs12 class="py-12 d-flex align-center">
+  <v-layout class="d-flex flex-fill" align-center>
+    <v-flex lg12 md12 sm12 class="py-12 d-flex">
 
-      <div class="col-12 col-sm-12 col-lg-5 col-md-5 pa-0">
-        <div class=" d-flex pa-0">
+      <div class="pa-0 col-6 col-sm-5 col-lg-5 col-md-5">
+        <div class="d-flex pa-0">
           <h5 class="text-uppercase text-caption font-weight-bold pink--text">
             Quem somos nós?
           </h5>
