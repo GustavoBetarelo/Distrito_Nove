@@ -45,6 +45,7 @@
                 large
                 rounded
                 elevation="0"
+                @click="$vuetify.goTo('#WeAreAmazing')"
                 class="white--text"
               >
                 Saiba mais
@@ -56,6 +57,8 @@
           <div class="pa-0 ml-auto col-12 col-lg-10 col-md-9 col-sm-12">
             <v-img
               max-width="100%"
+              :aspect-ratio="9 / 16"
+              max-height="700px"
               class="rounded"
               src="https://images.unsplash.com/photo-1587377838658-e7d21b152a4a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=701&q=80"
             />

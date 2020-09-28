@@ -103,15 +103,16 @@
               class="border-default d-flex align-center justify-space-between pa-6 mt-12 col-12 col-lg-6 col-md-6 col-sm-6"
             >
               <p class="mb-0">
-                Já conhece nossa plataforma? Vamos direto ao ponto!
+                Não conhece a plataforma? Vamos fazer um tour!
               </p>
               <v-btn
                 icon
+                @click="$vuetify.goTo('#Enterprise')"
                 class="border-default"
                 v-ripple="{ class: 'white--text' }"
               >
                 <v-icon color="white" size="16">
-                  mdi-arrow-right
+                  mdi-arrow-down
                 </v-icon>
               </v-btn>
             </div>
@@ -134,6 +135,10 @@ export default {
     openLogin() {
       this.$bus.$emit('changeLogin', true);
     },
+    handleScroll(event, teste) {
+      console.log(event, teste);
+      // return this.$vuetify.goTo('#Enterprise');
+    },
   },
 };
 </script>
@@ -151,6 +156,7 @@ export default {
   background-position: center;
   background-repeat: no-repeat;
   background-blend-mode: multiply;
+  background-attachment: fixed;
 }
 
 .border-default {
