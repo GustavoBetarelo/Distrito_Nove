@@ -1,14 +1,15 @@
 <template>
   <div class="fill-height">
     <Home />
-    <DirectionPlatform />
-    <WeAreAmazing />
+    <EnterpriseContent/>
+    <DirectionPlatform/>
+    <WeAreAmazing/>
     <!--    <Cards />-->
     <!--    <v-divider />-->
     <!--    <Banner />-->
     <!--    <v-divider />-->
     <!--    <Form />-->
-    <LoginModal />
+    <LoginModal/>
   </div>
 </template>
 
@@ -17,10 +18,11 @@ import Home from '@/pages/landing/components/home/index';
 import LoginModal from '@/pages/landing/components/login/index';
 import DirectionPlatform from '@/pages/landing/components/direction_platform/index';
 import WeAreAmazing from '@/pages/landing/components/we_are_amazing/index';
+import EnterpriseContent from '@/pages/landing/components/enterprise/index';
 
 export default {
   name: 'Landing',
-  components: { WeAreAmazing, DirectionPlatform, LoginModal, Home },
+  components: { WeAreAmazing, DirectionPlatform, LoginModal, Home, EnterpriseContent },
 };
 </script>
 
