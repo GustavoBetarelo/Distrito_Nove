@@ -10,9 +10,11 @@
         <v-flex lg6 md6 sm12>
           <v-img
             height="100%"
-            :class="$vuetify.breakpoint.xs ? 'rounded-b' : 'rounded-r-pill'"
             src="https://w.wallhaven.cc/full/lm/wallhaven-lm5z12.jpg"
-            gradient="to top right, rgba(100,115,201,.33), rgba(25,32,72,.7)"
+            gradient="to right,
+              rgba(246, 16, 103, 1),
+              rgba(246, 16, 103, 1)"
+            data-v-image-login
           >
             <div class="white--text pa-12">
               <h1 class="col-10 pa-0 font-weight-bold">
@@ -97,4 +99,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+div[data-v-image-login] > div.v-image__image {
+  background-blend-mode: multiply;
+}
+</style>
