@@ -3,7 +3,7 @@
     transition="slide-y-transition"
     v-model="open"
     @click:outside="open = false"
-    max-width="1200"
+    max-width="1000"
   >
     <v-card>
       <v-layout fill-height class="flex-column flex-lg-row flex-md-row">
@@ -25,9 +25,13 @@
             </div>
           </v-img>
         </v-flex>
-        <v-flex lg6 md6 class="pa-12 my-lg-16 ml-md-16   d-flex align-center">
-
-          <v-form class="flex-fill">
+        <v-flex lg6 md6 class="pa-12 d-flex justify-center flex-column">
+          <v-layout justify-end>
+            <v-flex shrink>
+              <v-icon @click="open = false" color="grey">mdi-close</v-icon>
+            </v-flex>
+          </v-layout>
+          <v-form class="flex-fill my-12">
             <div class="text-caption font-weight-light text-center grey--text ">
               Para fazer login
             </div>
@@ -36,7 +40,13 @@
             </div>
             <v-layout column class="mt-6">
               <v-flex>
-                <v-text-field type="mail" label="E-mail" outlined rounded color="pink" />
+                <v-text-field
+                  type="mail"
+                  label="E-mail"
+                  outlined
+                  rounded
+                  color="pink"
+                />
               </v-flex>
               <v-flex>
                 <v-text-field

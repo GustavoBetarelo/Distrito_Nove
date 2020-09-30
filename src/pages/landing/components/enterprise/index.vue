@@ -23,7 +23,7 @@
             </div>
             <div class="mt-6">
               <p class="dark--text font-weight-bold">
-                Visando inovar e surpreender, a Girabel’s integra populações e
+                Visando surpreender e inovar, a Girabel’s integra populações e
                 prefeituras em um só lugar.
               </p>
             </div>
