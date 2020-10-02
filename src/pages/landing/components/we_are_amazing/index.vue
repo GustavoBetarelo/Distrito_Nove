@@ -97,30 +97,30 @@ export default {
           icon: 'mdi-map-marker',
         },
         {
-          title: 'Marketing',
+          title: 'Interação Social',
           color: 'orange',
           description:
-            'Id venenatis a condimentum vitae. Magna fermentum iaculis' +
-            'eu non diam phasellus vestibulum lorem. Tortor dignissim' +
-            'convallis aenean et.',
+            'A população pode, se auto-ajudar, criando solicitações públicas,' +
+            'com a intenção de compartilhar o respaldo da prefeitura,' +
+            'com outros usuários, solucionando dúvidas em comum e demonstrando credibilidade.',
           icon: 'mdi-map-marker',
         },
         {
-          title: 'Webdesign',
+          title: 'Gestão Inteligente',
           color: 'green',
           description:
-            'Sollicitudin ac orci phasellus egestas tellus rutrum' +
-            'tellus pellentesque. Malesuada fames ac turpis egestas' +
-            'sed.',
+            'Integrando mais, a população e sua prefeitura,' +
+            'nossa plataforma permite que os gestores avaliem as diversas opiniões,' +
+            'potencializando ideias para novos projetos',
           icon: 'mdi-map-marker',
         },
         {
-          title: 'Webdev',
+          title: 'Produtividade dos colaboradores',
           color: 'pink',
           description:
-            'Integer quis auctor elit sed vulputate mi. Semper auctor neque' +
-            'vitae tempus. Vulputate odio ut enim blandit volutpat' +
-            'maecenas volutpat.',
+            'Inovando a metodologia da ouvidoria pública, essa ferramenta otimiza o tempo dos colaboradores,' +
+            'permitindo-os, montar análises e repassar a voz do povo,' +
+            'aos representantes públicos.',
           icon: 'mdi-map-marker',
         },
       ],
